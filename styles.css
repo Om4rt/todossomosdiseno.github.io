@@ -1,0 +1,626 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Simular el scroll - Alto de la página */
+    background-color: #ffffff;
+}
+
+
+
+/* Modificar estilo de los links */
+.no-decoration{
+    text-decoration: none;
+}
+
+/* Comportamiento de enlace */
+.enlace-pointer{
+    cursor: pointer;
+}
+
+/* padding por defecto */
+
+.salto-linea{
+    padding-top: 20px;
+}
+.salto-linea span {
+    margin: 5px;
+}
+
+
+
+/* Barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e9e9e9; /* Color del navbar */
+    color: black; /* Texto oscuro para contraste */
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); /* Borde sombreado de la navbar */
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* Resposive */
+
+/* Agregar espaciado o padding al contenido de la navbar */
+.padding-navbar {
+    padding: 10px;
+}
+
+.padding-icon-navbar {
+    padding-left: 100px;
+}
+
+/* Si quieres que el texto del menú tenga un color gris */
+.text-gray {
+    color: #888;
+}
+
+/* Para que la navbar no se superponga en la parte superior */
+body {
+    margin-top: 60px; /* Ajusta según el alto de la navbar */
+}
+
+
+/* Resposive */
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+
+/* Contenedor de la barra de navegación */
+.navbar .row {
+    width: 100%;
+    margin: 0;
+}
+
+/* Secciones de la barra de navegación */
+.navbar .col {
+    text-align: center; /* Alineación centrada */
+}
+
+.padding-navbar{
+    padding-left: 30px;
+}
+
+.padding-icon-navbar{
+    padding-left: 15px;
+}
+
+/* Contenido después de la barra */
+.content {
+    margin-top: 60px; /* Espacio para que el contenido no quede detrás de la navbar */
+    padding: 40px;
+}
+
+/* Carrusel */
+
+/* ---------------------------------------------------------------------------------------- */
+
+.carousel-inner img {
+    height: auto;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* Zona de artículos */
+/* Centra la sección y limita el ancho */
+.custom-section {
+    display: flex;
+    align-items: center;  /* Centra verticalmente */
+    justify-content: center;  /* Centra horizontalmente */
+    width: 80%; /* Ocupa solo el 80% del ancho de la pantalla */
+    max-width: 1200px; /* Evita que sea demasiado grande en pantallas grandes */
+    /* height: 100vh; */ /* Ocupa toda la altura de la pantalla */
+    gap: 20px; /* Espacio entre la imagen y el contenido */
+    padding: 20px;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Imagen a la izquierda en pantallas grandes */
+.image-container {
+    flex: 0 0 auto;
+}
+
+.image-container img {
+    width: auto;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+}
+
+.orange-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    width: 40%;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .custom-section {
+        flex-direction: column; /* Imagen arriba y contenido abajo */
+        text-align: center;
+        width: 90%; /* Mayor ancho en móviles */
+    }
+
+    .image-container img {
+        width: 100%;
+        max-height: 200px;
+        max-width: 400px;
+    }
+
+    .orange-button {
+        background-color: orange;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+/* Centra el contenedor */
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaciado entre botones */
+}
+
+/* Estilos generales de los botones */
+.social-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Colores de cada botón */
+.youtube {
+    background-color: #FF0000;
+}
+
+.spotify {
+    background-color: #1DB954;
+}
+
+/* Hover para cambiar a negro */
+.social-button:hover {
+    background-color: #000;
+}
+
+/* Merch */
+.centrar-merch {
+    width: 80%;
+    margin: 0 auto; /* Centra horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.img-hover-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-hover-effect:hover {
+    transform: scale(1.1); /* Aumenta el tamaño un 10% */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) { /* Ajustes para móviles */
+    .salto-linea .col-3,
+    .salto-linea .col-6 {
+        width: 100%; /* Cada imagen ocupará el 100% en móviles */
+        display: flex;
+        justify-content: center; /* Centra la imagen */
+        margin-bottom: 15px; /* Espaciado entre imágenes */
+    }
+
+    .salto-linea .col-3 img,
+    .salto-linea .col-6 img {
+        max-width: 80%; /* Limita el ancho de la imagen al 80% del contenedor */
+        height: auto; /* Mantiene la proporción */
+    }
+}
+
+/* Boletín de Prensa */
+.prensa {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 30px; /* Espacio superior */
+    text-align: center; /* Centra el texto en ambas vistas */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.prensa .imagen-col {
+    flex: 1; /* La imagen ocupará el 50% del espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.prensa .texto-col {
+    flex: 1; /* El texto ocupará la otra mitad */
+    padding-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.prensa p {
+    margin: 5px 0; /* Espacio entre las líneas de texto */
+}
+
+@media (max-width: 768px) {
+    .prensa {
+        flex-direction: column; /* Pone imagen y texto en una columna */
+    }
+
+    .prensa .imagen-col,
+    .prensa .texto-col {
+        width: 100%; /* Cada bloque ocupará el 100% en móviles */
+    }
+
+    .prensa .imagen-col img {
+        max-width: 90%; /* Limita el tamaño de la imagen en móviles */
+        height: auto;
+    }
+
+    .prensa .texto-col {
+        padding-left: 0; /* Elimina el espacio extra a la izquierda en móviles */
+        margin-top: 15px; /* Espacio entre la imagen y el texto */
+    }
+}
+
+/* Boletín de Prensa */
+
+/* Navbar Responsive */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ESTILOS DE TEXTO */
+
+/* GRAY */
+
+.text-gray{
+    color: rgb(225, 225, 225);
+    text-decoration: none; 
+}
+
+.nav-link:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+/* BLACK */
+
+/* Black Navbar */
+.icon-shop{
+    color: black;
+    font-size: 40px;
+}
+
+/* Black text */
+
+.black-text{
+    color: black;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* Boton de contacto */
+
+/* Estilo para el botón flotante */
+/* Estilo para el botón flotante */
+#botondDeContacto {
+    position: fixed; /* Lo fija a la pantalla */
+    bottom: 20px; /* 20px de margen desde el fondo */
+    right: 20px; /* 20px de margen desde la derecha */
+    padding: 15px; /* Tamaño del botón */
+    border-radius: 50%; /* Lo hace circular */
+    font-size: 30px; /* Aumenta el tamaño del icono */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    border: none; /* Sin borde */
+    background-color: #25D366; /* Color de fondo para WhatsApp */
+    color: white; /* Color del icono */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    cursor: pointer; /* Cambia el cursor cuando pasas el mouse sobre el botón */
+    display: flex; /* Usamos flexbox para centrar el icono */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+}
+
+#botondDeContacto:hover {
+    background-color: #2c2c2c; /* Color de fondo de WhatsApp al hacer hover */
+}
+
+#botondDeContacto:focus {
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+#botondDeContacto i {
+    font-size: 30px; /* Ajusta el tamaño del icono */
+}
+
+
+/* Boton de contacto */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------READ------------------------------------ */
+
+/* Encabezado */
+.encabezado-read {
+    width: 80%;
+    margin: 0 auto; /* Centrar el encabezado */
+    text-align: center;
+}
+
+.texto-imagen{
+    color: gray;
+    padding-top: 10px;
+    padding-left: 125px;
+}
+
+.caja-comentario{
+    margin-left: 120px;
+    width: 80%;
+}
+
+.btn-publicar{
+    text-align: end; 
+    padding-right: 130px;
+}
+
+.btn-publicar button{
+    background-color: orange;
+    border: none;
+    width: 120px;
+    height: 40px;
+    color: white;
+}
+
+/* Imagen - La clase .img-fluid hace que la imagen sea responsiva */
+img.img-fluid {
+    width: 100%;
+    max-width: 800px; /* Máximo ancho de la imagen */
+    height: auto;
+    display: block; /* Evitar márgenes adicionales debajo de la imagen */
+    margin: 0 auto; /* Centrar la imagen */
+}
+
+/* Contenido */
+.contenido-read {
+    width: 80%;
+    margin: 0 auto; /* Centrar el contenido */
+    text-align: justify;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+
+    .content{
+        padding-top: 0px;
+    }
+
+    .texto-imagen{
+        color: gray;
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+
+    .encabezado-read {
+        width: 90%; /* Usar un poco más de espacio en pantallas pequeñas */
+    }
+
+    .contenido-read {
+        width: 90%; /* Usar un poco más de espacio en pantallas pequeñas */
+    }
+
+    .encabezado-read h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del texto en pantallas pequeñas */
+    }
+
+    /* Ajuste de la imagen en pantallas pequeñas */
+    img.img-fluid {
+        max-width: 90%; /* La imagen no debe exceder el 100% de la pantalla */
+    }
+
+    .contenido-read p {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+
+    .caja-comentario{
+        margin-left: 15px;
+        width: 90%;
+    }
+    
+    .btn-publicar{
+        text-align: end; 
+        padding-right: 20px;
+    }
+    
+    .btn-publicar button{
+        background-color: orange;
+        border: none;
+        width: 120px;
+        height: 40px;
+        color: white;
+    }
+}
+
+@media (max-width: 576px) {
+    .encabezado-read h1 {
+        font-size: 1.25rem; /* Reducir aún más en pantallas muy pequeñas */
+    }
+
+    .contenido-read p {
+        font-size: 0.85rem; /* Reducir aún más el tamaño del texto */
+    }
+}
+
+/* ------------------------------------------------READ------------------------------------ */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* FOOTER */
+
+/* Estilos del footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Títulos de las secciones */
+.footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Texto de las secciones */
+.footer p {
+    font-size: 1rem;
+}
+
+/* Lista de enlaces */
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer ul li a:hover {
+    color: #ff5722; /* Color de hover */
+}
+
+/* Estilos de los íconos sociales */
+.footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .social-links a {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.footer .social-links a:hover {
+    color: #ff5722;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    /* Las columnas se apilan en pantallas pequeñas */
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    /* Ajustamos el tamaño de la fuente */
+    .footer h5 {
+        font-size: 1.25rem;
+    }
+
+    .footer p, .footer ul li a {
+        font-size: 0.9rem;
+    }
+
+    /* Las redes sociales se alinean de manera vertical */
+    .footer .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustamos aún más para móviles pequeños */
+    .footer .container {
+        padding: 0 15px;
+    }
+
+    .footer h5 {
+        font-size: 1.1rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer ul li a {
+        font-size: 0.8rem;
+    }
+
+    /* Reducción de tamaño de los íconos sociales */
+    .footer .social-links a {
+        font-size: 1.5rem;
+    }
+}
+/* FOOTER */

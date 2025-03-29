@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Somo Diseño</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS y Popper.js para que los menús colapsen -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="index_FuncionesJs.js" defer></script>
+</body>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <!-- Logo o texto principal en la navbar -->
+            <a class="navbar-brand col-4" style="text-align: center;" href="index.html">TODOS SOMOS DISEÑO</a>
+    
+            <!-- Botón de menú hamburguesa (visible solo en pantallas pequeñas) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Menú colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: end; padding-right: 100px;">
+                <div class="navbar-nav">
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="index.html">SOMOS</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="index.html">NOTICIAS</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="index.html">FESTIVAL</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="index.html">PODCAST</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="index.html">TIENDA</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="index.html">PRENSA</a>
+                    <!-- Icono de Compra -->
+                    <a class="nav-link padding-icon-navbar" id="icon-container" href="index.html">SHOP</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Fin Barra de navegación -->
+
+    <!-- Boton de contacto -->
+
+    <button onclick="window.open('https:\\www.whatsapp.com')" id="botondDeContacto" class="btn btn-primary">
+        <i class="fa-brands fa-whatsapp"></i>
+    </button>
+
+    <!-- Fin boton de contacto -->
+
+
+    <!-- Contenido -->
+
+    <div class="content">
+            <!-- Carrusel de imágenes -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Em1.png" class="d-block w-100" alt="Todos Somos Diseño">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Em3.png" class="d-block w-100" alt="Todos Somos Diseño">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Em1.png" class="d-block w-100" alt="Todos Somos Diseño">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Video principal -->
+    <center>
+        <div class="video-principal">
+            <video width="80%" height="360" controls autoplay loop muted>
+                <source src="img/618a6793-29c7-48fd-8961-616173a98982.mp4" type="video/mp4">
+            </video>
+        </div>
+    </center>
+    <!-- Video principal -->
+
+    <!-- Artículos -->
+    <section class="custom-section">
+        <div class="image-container">
+            <img src="img/stock1.jpeg" alt="Descripción de la imagen">
+        </div>
+        <div class="content-container">
+            <p class="small-text">Enero 16, 2023</p>
+            <p class="bold-text">Podcast Todos Somos Diseño Tercera temporada con nuevo formato e imagen</p>
+            <p class="description">A finales de 2022 fue lanzado el podcast mexicano presentado por Simbold, entre otras empresas.</p>
+            <button onclick="window.location.href='read.html'" class="orange-button">LEER MÁS</button>
+        </div>
+    </section>
+    
+    <section class="custom-section">
+        <div class="image-container">
+            <img src="img/stock2.jpeg" alt="Descripción de la imagen">
+        </div>
+        <div class="content-container">
+            <p class="small-text">Junio 5, 2020</p>
+            <p class="bold-text">Prototypex: un reality de diseño industrial como protesta estudiantil</p>
+            <p class="description">E_Design surgió en México como un festival que actualmente produce un reality en Youtube</p>
+            <button onclick="window.location.href='read.html'" class="orange-button">LEER MÁS</button>
+        </div>
+    </section>  
+    <!-- Sección artículos -->
+
+    <!-- Carrusel 2 -->
+    <div class="content">
+            <!-- Carrusel de imágenes -->
+        <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Em3.png" class="d-block w-100" alt="Todos Somos Diseño">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Em1.png" class="d-block w-100" alt="Todos Somos Diseño">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Em3.png" class="d-block w-100" alt="Todos Somos Diseño">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carrusel 2 -->
+
+    <!-- Episodios -->
+    <div class="container text-center mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/Mn1.png" class="enlace-pointer img-fluid" alt="Imagen 1" onclick="window.location.href='index.html'">
+                <a class="no-decoration" href="index.html"><p class="black-text mt-3">Episodio 1  <span style="color: palevioletred; font-weight: bold; font-size: 21px;">Andy Cesarman</span></p></a>
+            </div>
+            <div class="col-md-4">
+                <img src="img/Mn2.png" class="enlace-pointer img-fluid" alt="Imagen 2" onclick="window.location.href='index.html'">
+                <a class="no-decoration" href="index.html"><p class="black-text mt-3">Episodio 10  <span style="color: orange; font-weight: bold; font-size: 21px;">Santhal Sandoval</span></p></a>
+            </div>
+            <div class="col-md-4">
+                <img src="img/Mn3.png" class="enlace-pointer img-fluid" alt="Imagen 3" onclick="window.location.href='index.html'">
+                <a class="no-decoration" href="index.html"><p class="black-text mt-3">Episodio 11  <span style="color: green; font-weight: bold; font-size: 21px;">The Cult</span></p></a>
+            </div>
+        </div>
+    </div>    
+    <!-- Episodios -->
+
+    <!-- Enlaces a yt y sp -->
+    <div class="salto-linea">
+        <center><h4>Enlaces a las PL en Youtube y Spotify</h4></center>
+    </div>
+
+    <div class="contenedor-botones">
+        <button onclick="window.open('https:\\www.youtube.com')" class="social-button youtube"><i class="fa-brands fa-youtube"></i></button>
+        <button onclick="window.open('https:\\open.spotify.com')" class="social-button spotify"><i class="fa-brands fa-spotify"></i></button>
+    </div>
+    <!-- Enlaces a yt y sp -->
+
+    <!-- Zona de Merch -->
+        <div style="padding: 40px;"></div>
+        <div class="salto-linea">
+            <h3 class="salto-linea" style="text-align: center;">Compra artículos de la marca y ediciones especiales con nuestros artistas y diseñadores</h3>
+        </div>
+
+        <center>
+            <div class="row salto-linea centrar-merch">
+                <div class="col-3 enlace-pointer">
+                    <img onclick="window.location.href='index.html'" class="img-hover-effect" src="img/Em4.png" alt="">
+                </div>
+            
+                <div class="col-3 enlace-pointer">
+                    <img onclick="window.location.href='index.html'" class="img-hover-effect" src="img/Em5.png" alt="">
+                </div>
+            
+                <div class="col-6 enlace-pointer">
+                    <img onclick="window.location.href='index.html'" class="img-hover-effect" src="img/Em6.png" alt="">
+                </div>
+            </div>
+        </center>
+    <!-- Zona de Merch -->
+
+    <!-- Boletín de Prensa -->
+        <br><br>
+        <center><h4>PRENSA</h4></center>
+        <div class="prensa salto-linea">
+            <div class="imagen-col">
+                <img src="img/Em7.png" alt="Imagen">
+            </div>
+            <div class="texto-col">
+                <a onclick="window.open('https:\\drive.google.com')" href="index.html" class="no-decoration"><i class="fa-brands fa-google-drive"></i> Enlace al medio</a>
+                <hr>
+                <a onclick="window.open('https:\\drive.google.com')" href="index.html" class="no-decoration"><i class="fa-brands fa-google-drive"></i> Enlace al medio</a>
+                <hr>
+                <a onclick="window.open('https:\\drive.google.com')" href="index.html" class="no-decoration"><i class="fa-brands fa-google-drive"></i> Enlace al medio</a>
+            </div>
+        </div>    
+    <!-- Boletín de Prensa -->
+
+    <center>
+        <br><br>
+        <div class="salto-linea" style="font-size: 42px; text-align: center;">
+            <span class="fa-solid fa-burger"></span>
+            <span class="fa-solid fa-car"></span>
+            <span class="fa-solid fa-bottle-water"></span>
+            <span class="fa-solid fa-car-side"></span>
+            <span class="fa-brands fa-apple"></span>
+            <span class="fa-solid fa-person-walking"></span>
+            <span class="fa-solid fa-tv"></span>
+            <span class="fa-solid fa-car-rear"></span>
+            <span class="fa-solid fa-car-on"></span>
+            <span class="fa-brands fa-google"></span>
+        </div>
+    </center>
+    <br>
+    <!-- Fin del Contenido -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Columna de Acerca de Nosotros -->
+            <div class="col-12 col-md-4 text-center">
+                <h5>TODOS SOMOS DISEÑO</h5>
+                <p>Descripción acerca de todos somos diseño e información para el usuario</p>
+            </div>
+            
+            <!-- Columna de Enlaces Rápidos -->
+            <div class="col-12 col-md-4 text-center">
+                <h5>Enlaces Rápidos</h5>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna de Redes Sociales -->
+            <div class="col-12 col-md-4 text-center">
+                <h5>Redes / Contacto</h5>
+                <br>
+                <ul class="social-links">
+                    <li><a onclick="window.open('https:\\gmail.com')" href="index.html"><i class="fa-brands fa-google"></i></a></li>
+                    <li><a onclick="window.open('https:\\www.facebook.com')" href="index.html"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a onclick="window.open('https:\\x.com')" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a onclick="window.open('https:\\www.instagram.com')" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Derechos de autor -->
+        <div class="text-center mt-3">
+            <p>&copy; 2025 Todos los derechos reservados</p>
+        </div>
+    </div>
+</footer>
+</html>
