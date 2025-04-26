@@ -711,7 +711,7 @@ body {
     align-items: center;
 }
 
-.card{
+.cardg{
     width: 70px;
     height: 400px;
     margin-right: 20px;
@@ -762,7 +762,7 @@ body {
 }
 
 .active{
-    width: 500px;
+    width: 5000px;
     transition: all linear 400ms;
 }
 
