@@ -116,7 +116,7 @@ body {
 }
 
 .contentg {
-    margin-top: 60px; /* Espacio para que el contenido no quede detrás de la navbar */
+    margin-top: 10px; /* Espacio para que el contenido no quede detrás de la navbar */
 }
 
 /* Carrusel */
