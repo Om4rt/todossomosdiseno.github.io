@@ -117,7 +117,6 @@ body {
 
 .contentg {
     margin-top: 60px; /* Espacio para que el contenido no quede detrás de la navbar */
-    padding: 40px;
 }
 
 /* Carrusel */
@@ -704,8 +703,7 @@ body {
 .containerg{
     width: 100%;
     height: 100vh;
-    padding-top: -50px;
-    padding-bottom: 150px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -713,21 +711,21 @@ body {
 
 .cardg{
     width: 70px;
-    height: 400px;
+    height: 100%;
     margin-right: 20px;
     overflow: hidden;
     position: relative;
     transition: all linear 400ms;
 }
 
-.card img{
+.cardg img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     cursor: pointer;
 }
 
-.card h2{
+.cardg h2{
     position: absolute;
     bottom: 30px;
     left: 20px;
@@ -739,7 +737,7 @@ body {
     transition: all linear 400ms;
 }
 
-.card p{
+.cardg p{
     position: absolute;
     bottom: -10px;
     left: 20px;
@@ -751,12 +749,12 @@ body {
     transition: all linear 400ms;
 }
 
-.card.active h2{
+.cardg.active h2{
     opacity: 1;
 
 }
 
-.card.active p{
+.cardg.active p{
     opacity: 1;
     
 }
