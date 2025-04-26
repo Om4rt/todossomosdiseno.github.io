@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Somo Diseño</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS y Popper.js para que los menús colapsen -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="index_FuncionesJs.js" defer></script>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <!-- Logo o texto principal en la navbar -->
+            <a class="navbar-brand col-4" style="text-align: center;" href="index.html">TODOS SOMOS DISEÑO</a>
+    
+            <!-- Botón de menú hamburguesa (visible solo en pantallas pequeñas) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Menú colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: end; padding-right: 100px;">
+                <div class="navbar-nav">
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="somos.html">SOMOS</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="noticias.html">NOTICIAS</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="festival.html">FESTIVAL</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="podcast.html">PODCAST</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="tienda.html">TIENDA</a>
+                    <a class="nav-link text-gray padding-navbar" style="padding-top: 15px;" href="index.html">PRENSA</a>
+                    <!-- Icono de Compra -->
+                    <a class="nav-link padding-icon-navbar" id="icon-container" href="index.html">SHOP</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Fin Barra de navegación -->
+
+    <!-- Boton de contacto -->
+    <button onclick="window.open('https:\\www.whatsapp.com')" id="botondDeContacto" class="btn btn-primary">
+        <i class="fa-brands fa-whatsapp"></i>
+    </button>
+    <!-- Fin boton de contacto -->
+
+    <div style="padding-top: 80px;"></div>
+    <center><h1>PODCAST</h1></center>
+
+    <div class="container my-3">
+        <div class="row">
+          <div class="col text-center p-1" style="border: 2px solid rgba(0, 0, 0, 0.3);">
+            <h2>TEASER</h2>
+          </div>
+        </div>
+    </div>      
+      
+
+    <div class="container d-flex justify-content-center">
+        <div class="ratio ratio-16x9" style="width: 75%;">
+            <iframe src="https://www.youtube.com/embed/Gs069dndIYk" allow="autoplay" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <div style="padding-top: 40px;"></div>
+    <div class="container my-3">
+        <div class="row">
+          <div class="col text-center p-1" style="border: 2px solid rgba(0, 0, 0, 0.3);">
+            <h2>NUEVOS EPISODIOS</h2>
+          </div>
+        </div>
+    </div> 
+
+    <div class="container d-flex justify-content-center">
+        <div class="ratio ratio-16x9" style="width: 75%;">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLkzRvHUjsnZQGm3rWS9JlVkzNTuoSlGCq&pp=0gcJCV8EOCosWNin" allow="autoplay" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="espaciado10px"></div>  
+
+    <div class="botones-grid">
+        <button class="btn-icon-text d-flex flex-column align-items-center justify-content-center p-3">
+          <i class="fa-brands fa-youtube fa-2x mb-2"></i>
+          <span>Visitar en YouTube</span>
+        </button>
+        
+        <button class="btn-icon-text d-flex flex-column align-items-center justify-content-center p-3">
+          <i class="fa-brands fa-spotify fa-2x mb-2"></i>
+          <span>Visitar en Spotify</span>
+        </button>
+    </div>
+
+    <div class="espaciado10px"></div>
+
+    <div class="container text-center mt-5">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="enlace-pointer" data-bs-toggle="modal" data-bs-target="#modalVolUno">
+                    <img src="img/Mn1.png" class="img-fluid" alt="Imagen 1">
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <span class="black-text" style="font-size: 24px; font-weight: bold;">Volumen 1</span>
+                        <i class="fa-brands fa-youtube ms-2" style="color: palevioletred; font-size: 48px;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="enlace-pointer text-center" data-bs-toggle="modal" data-bs-target="#VolDos">
+                    <img src="img/Mn2.png" class="img-fluid" alt="Imagen 2">
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <span class="black-text" style="font-size: 24px; font-weight: bold;">Volumen 2</span>
+                        <i class="fa-brands fa-youtube ms-2" style="color: orange; font-size: 48px;"></i>
+                    </div>
+                </div>
+            </div>            
+
+        </div>
+    </div>
+    
+    <div class="espaciado10px"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- MODALES -->
+
+    <div class="modal fade" id="modalVolUno" tabindex="-1" aria-labelledby="modalVolUnoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+      
+            <div class="modal-header justify-content-center">
+              <h3 class="modal-title text-center w-100" id="modalVolUnoLabel">Volumen 1</h3>
+              <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+      
+            <div class="modal-body">
+      
+              <!-- Slider de imágenes -->
+              <div id="carouselVolUno" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/stock-photo1.jpg" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Slide 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/stock-photo2.jpg" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Slide 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/stock-photo3.jpg" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Slide 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselVolUno" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselVolUno" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+      
+              <!-- Texto -->
+              <div class="text-center mb-4">
+                <p style="text-align: justify;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nulla minima molestias autem doloremque quo enim earum consequuntur libero aspernatur voluptatem expedita, perspiciatis sequi commodi pariatur inventore quaerat vero iure perferendis laboriosam, esse distinctio quas doloribus unde. Animi, minus dolore fugit id unde voluptatibus non perferendis eum aperiam assumenda iste debitis illum sint architecto laboriosam harum iure voluptate deleniti ex adipisci optio nostrum! Sunt, adipisci dolore quas tempore aliquid modi perferendis iste. Beatae impedit mollitia nulla architecto ex optio esse sunt, ipsa ullam facilis sapiente odit neque vel ipsam corporis.
+                </p>
+              </div>
+      
+              <!-- Botones -->
+              <div class="d-flex justify-content-center gap-4">
+                <button class="btn btn-outline-danger circle">
+                  <i class="fab fa-youtube fa-2x"></i>
+                </button>
+                <button class="btn btn-outline-success circle">
+                  <i class="fab fa-spotify fa-2x"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="VolDos" tabindex="-1" aria-labelledby="VolDosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h2 class="modal-title w-100 text-center" id="VolDosLabel">Volumen 2</h2>
+              <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+      
+              <!-- Slider -->
+              <div id="volDosCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/stock-photo4.jpg" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Slide 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/stock-photo5.jpg" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Slide 2">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#volDosCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#volDosCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+      
+              <!-- Texto -->
+              <p style="text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae assumenda, fuga impedit saepe dolore incidunt reiciendis totam ut quia mollitia quasi commodi minus alias laborum dolorem ab quisquam voluptatum architecto dolor? Iste porro minima dolorem odit fugiat debitis harum doloremque, quas consequuntur natus quasi quia cum, consectetur dolor. Quod accusamus at culpa quis vero debitis voluptatum libero consequuntur, dolorum repudiandae? Necessitatibus temporibus sit porro vitae saepe veniam deserunt tempore mollitia sequi tempora, odio cum minus reiciendis laudantium. Laborum, dolorum, aut quis dicta maiores quae at nam, ipsum id voluptatem perspiciatis.
+              </p>
+      
+              <!-- Botones -->
+              <div class="d-flex justify-content-center gap-4 mt-4">
+                <a href="https://www.youtube.com" target="_blank" class="btn btn-outline-danger circle">
+                  <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+                <a href="https://www.spotify.com" target="_blank" class="btn btn-outline-success circle">
+                  <i class="fa-brands fa-spotify fa-2x"></i>
+                </a>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div> 
+
+    <!-- MODALES -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Columna de Acerca de Nosotros -->
+                <div class="col-12 col-md-4 text-center">
+                    <h5>TODOS SOMOS DISEÑO</h5>
+                    <p>Descripción acerca de todos somos diseño e información para el usuario</p>
+                </div>
+                
+                <!-- Columna de Enlaces Rápidos -->
+                <div class="col-12 col-md-4 text-center">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna de Redes Sociales -->
+                <div class="col-12 col-md-4 text-center">
+                    <h5>Redes / Contacto</h5>
+                    <br>
+                    <ul class="social-links">
+                        <li><a onclick="window.open('https:\\gmail.com')" href="index.html"><i class="fa-brands fa-google"></i></a></li>
+                        <li><a onclick="window.open('https:\\www.facebook.com')" href="index.html"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a onclick="window.open('https:\\x.com')" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a onclick="window.open('https:\\www.instagram.com')" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Derechos de autor -->
+            <div class="text-center mt-3">
+                <p>&copy; 2025 Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
